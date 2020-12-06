@@ -19,7 +19,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
 $password = password_hash($password, PASSWORD_BCRYPT);
 
-require_once("components/db.php");
+require_once("db.php");
 
 $result = $mysqli->query("SELECT * FROM `users` WHERE `email`='$email'")->fetch_assoc();
 if(isset($result) ) {
