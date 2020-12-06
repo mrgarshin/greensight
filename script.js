@@ -21,6 +21,7 @@ function sendForm(form) {
         .then((result) => {
             if(result == "ok") {
                 alert("Пользователь успешно зарегистрирован!");
+                //Переадресация на ту же страницу для "обнуления" данных
                 location.href = "reg.php";
             } else {
                 showErrorText(result);
