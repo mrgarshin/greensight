@@ -1,6 +1,6 @@
 <?php
     $title = "Регистрация";
-    require_once("components/header.php");
+    require_once("header.php");
 ?>
     <div class="container">
         <div class="row justify-content-center">
@@ -21,5 +21,5 @@
         </div>
     </div>
 <?php
-    require_once("components/footer.php");
+    require_once("footer.php");
 ?>
